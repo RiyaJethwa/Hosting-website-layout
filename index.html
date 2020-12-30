@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Home</title>
+    <meta name="viewport" content="width=device-width, initital-scale=1.0">
+    <link href="css/all.css" rel="stylesheet">
+    <link href="webfonts" rel="stylesheet">
+    <style>
+        body{
+          margin:0;
+        }
+        .container1{
+          display:flex;
+          justify-content:space-around;
+          background-color:#000000;
+        }
+        @media(max-width:786px){
+          .container1{
+            flex-direction:column;
+          }
+          .container1 ul{
+            justify-content:center;
+            background-color:#3c3c3c;
+          }
+        }
+        .container1 p{
+          padding:20px;
+          margin:0;
+          font:500 25px arial;
+          color:white;
+          text-align:center;
+        }
+        .container1 ul{
+          display:flex;
+          list-style-type:none;
+          margin:0;
+          padding:0;
+          font:500 18px arial;
+        }
+        a{
+          text-decoration:none;
+          color:white;
+        }
+        li{
+          padding:20px;
+        }
+        li:hover{
+          background-color:#787878;
+        }
+        @media(min-width:786px){
+        .container2{
+          display:flex;
+          justify-content:space-between;
+        }
+        }
+        @media(max-width:786px){
+          .myform{
+            margin-left:50px;
+            margin-right:50px;
+          }
+          .para1{
+            text-align:center;
+          }
+        }
+        .container2{
+          padding:20px;
+          background-image: url('img/mainbg.jpg');
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: cover;
+          margin-bottom: 20px;
+        }
+        .para1{
+          padding:30px;
+          flex:2;
+          color:white;
+        }
+        @media(min-width:786px){
+        .para1{
+          animation-name:animate1;
+          animation-duration:3s;
+          animation-timing-function:ease;
+        }
+        @keyframes animate1{
+          from{transform:translatex(-100%)}
+          to{transform:translatex(0)}
+        }
+        }
+        @media(max-width:786px){
+        .para1{
+          animation-name:am1;
+          animation-duration:3s;
+          animation-timing-function:ease;
+        }
+        @keyframes am1{
+          from{transform:translatey(-100%)}
+          to{transform:translatey(0)}
+        }
+        }
+        .para1 h1{
+          font:600 30px arial;
+
+        }
+        .para1 p{
+          font:500 20px arial;
+
+        }
+        .para1 button{
+          padding:10px;
+          font:500 15px arial;
+          border: none;
+          border-radius:5%;
+        }
+        .myform{
+          padding:20px;
+          border-radius:5%;
+          box-shadow:2px 2px 5px white;
+          flex:1;
+          background-color: white;
+        }
+        @media(min-width:786px){
+        .myform{
+          animation-name:animate2;
+          animation-duration:3s;
+          animation-timing-function:ease;
+        }
+        @keyframes animate2{
+          from{transform:translatex(100%)}
+          to{transform:translatex(0)}
+        }
+        }
+        @media(max-width:786px){
+        .myform{
+          animation-name:am2;
+          animation-duration:3s;
+          animation-timing-function:ease;
+        }
+        @keyframes am2{
+          from{transform:translatey(100%)}
+          to{transform:translatey(0)}
+        }
+        }
+        .myform h2{
+          font:500 20px arial;
+          padding:10px;
+          margin-bottom: 30px;
+        }
+      form input[type=text],input[type=email]{
+        margin-bottom:30px;
+        border:none;
+        border-bottom:1px darkgrey solid;
+        text-align:left;
+        font:500 15px arial;
+        width:100%;
+      }
+      form input[type=submit]{
+        padding:10px;
+        border-radius:5%;
+        font:500 15px arial;
+        border:none;
+      }
+      #random{
+        flex:1;
+      }
+      .container3{
+        display:flex;
+        flex-direction:column;
+        justify-content: center;
+      }
+      @media(min-width:786px){
+      .container3{
+        animation-name:animate3;
+        animation-duration:3s;
+        animation-timing-function:ease;
+      }
+      @keyframes animate3{
+        from{transform:translatey(100%)}
+        to{transform:translatex(0)}
+      }
+      }
+      .para2{
+        text-align:center;
+        font:500 20px arial;
+      }
+      .symbols{
+        display:flex;
+        justify-content: center;
+      }
+      @media(max-width:786px){
+      .symbols{
+        flex-direction: column;
+      }
+      }
+      #box3{
+        padding:30px;
+        margin:0px 30px;
+        text-align:center;
+      }
+      #box3 p{
+        font:500 20px arial;
+        color:green;
+      }
+      #box3 span{
+        font:500 25px arial;
+        color:black;
+      }
+      #cli p{
+        margin:0;
+      }
+      #clitext{
+        margin:0;
+        font:500 20px monospace;
+        padding:15px 20px 20px 20px;
+        color:lightblue;
+      }
+      #cli span{
+        font:300 50px Georgia, sans-serif;
+      }
+      #dot1{
+        padding-left: 20px;
+        color:orangered;
+      }
+      #dot2{
+        color:yellow;
+      }
+      #dot3{
+        color:lightgreen;
+      }
+      @media(min-width:786px){
+      .container4{
+        display:flex;
+        justify-content:center;
+        align-items: center;
+      }
+      #cli{
+        transform:translatex(-70px);
+      }
+      }
+      #box4{
+        padding:10px;
+        font:500 20px arial;
+        border:none;
+        border-radius:5px;
+        box-shadow:2px 2px 2px 3px lightgrey;
+        margin-bottom: 30px;
+        width:100%;
+      }
+      #cli{
+        background-color:midnightblue;
+        width:30%;
+        position:relative;
+      }
+      @media(max-width:786px){
+        #box4{
+          margin:auto;
+          width:60%;
+          margin-bottom:30px;
+        }
+        #cli{
+          margin:auto;
+          width:80%;
+          margin-bottom:30px;
+        }
+      }
+      .container5{
+        background-color:black;
+        padding:10px;
+      }
+      @media(min-width:786px){
+        .container5{
+          display:flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+      .cont5para{
+        color:white;
+        font-family:arial;
+        text-align: center;
+      }
+      .cont5para h1{
+        font-weight: 400;
+      }
+      .cont5para p{
+        font-size:20px;
+      }
+      .cont5para button{
+        border:none;
+        padding:10px;
+        background-color:lightgrey;
+        font-size:15px;
+      }
+      .cont5img{
+        padding:10px;
+      }
+      @media(max-width:786px){
+        .cont5img{
+          text-align: center;
+          margin-top: 20px;
+        }
+      }
+      .container6{
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      .container6 h2{
+        font:400 30px arial;
+        padding:10px;
+      }
+      .languagetype{
+        display:flex;
+        justify-content: center;
+        flex-wrap:wrap;
+      }
+      .c6box{
+        font:500 20px arial;
+        text-align: center;
+        padding:10px;
+        margin:10px 10px 20px 10px;
+        box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2),0 3px 4px 0 rgba(0, 0, 0, 0.19);
+        border-radius: 5%;
+        transition-property:transform;
+        transition-duration:0.5s;
+      }
+      .c6box:hover{
+        transform:translatey(-10px);
+      }
+      footer{
+        display:flex;
+        background-color:darkslategrey;
+        justify-content: space-around;
+      }
+      @media(max-width:786px){
+        footer{
+          flex-direction:column;
+        }
+      }
+      .fsection1{
+        padding:30px;
+        text-align: center;
+      }
+      .fsection1 p{
+        margin:0;
+        font:500 15px arial;
+        color:white;
+      }
+      .fsection1 p span{
+        font:400 25px arial;
+      }
+      .fsection2{
+        font:500 17px arial;
+        padding:30px;
+        text-align: center;
+      }
+      .fsection3{
+        color:white;
+        padding:30px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+      <div class="container1">
+        <p>Mizuki.</p>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="featurespage.html">Features</a></li>
+          <li><a href="docspage.html">Docs</a></li>
+        </ul>
+      </div>
+      <div class="container2">
+        <div id="random"></div>
+        <div class="para1">
+          <h1>Easier Deployment</h1>
+          <p>Deploy web apps of all kinds,
+            from largescale enterprise APIs to static websites for individuals.Fill out the form to try a demo of our platform.</p>
+          <button>Read More</button>
+        </div>
+        <div class="myform">
+          <h2>Request a Demo</h2>
+          <form action="#" method="POST">
+            <input type="text" name="username" placeholder="Name"><br>
+            <input type="text" name="user_company_name" placeholder="Company Name"><br>
+            <input type="email" name="useremail" placeholder="Email"><br>
+            <input type="submit" name="submit" value="Send">
+          </form>
+        </div>
+        <div id="random"></div>
+      </div>
+      <div class="container3">
+        <div class="para2">
+          <p>Welcome to the best platform for building applications of all types with modern architecture and scaling</p>
+        </div>
+        <div class="symbols">
+          <div id="box3">
+            <i class="fas fa-3x fa-server"></i>
+            <p><span>10,349,405</span></p>
+            <p>Deployments</p>
+          </div>
+          <div id="box3">
+            <i class="fas fa-3x fa-upload"></i>
+            <p><span>987TB</span></p>
+            <p>Published</p>
+          </div>
+          <div id="box3">
+            <i class="fas fa-3x fa-project-diagram"></i>
+            <p><span>2,343,265<span></p>
+            <p>Projects</p>
+          </div>
+        </div>
+      </div>
+      <div class="container4">
+        <div id="cli">
+          <p><span id="dot1">.</span><span id="dot2">.</span><span id="dot3">.</span></p>
+          <p id="clitext">npm install -g mizuki-cli</p>
+        </div>
+        <div class="container4box">
+          <div id="box4">
+            <p>Easy to use cross platform CLI</p>
+          </div>
+          <div id="box4">
+            <p>Deploy in seconds</p>
+          </div>
+      </div>
+      </div>
+      <div class="container5">
+        <div class="cont5para">
+          <h1>Extreme Cloud Hosting</h1>
+          <p>Cloud hosting like you've never seen. Fast, efficient and scalable</p>
+          <button>Read More</button>
+        </div>
+        <div class="cont5img">
+          <img src="img/cloud.png" alt="cloud img" width="350px" height="250px">
+        </div>
+      </div>
+      <div class="container6">
+        <h2>Supported Languages</h2>
+        <div class="languagetype">
+          <div class="c6box">
+            <p>Node.js</p>
+            <img src="img/node.png" alt="sample img">
+          </div>
+          <div class="c6box">
+            <p>Python</p>
+            <img src="img/python.png" alt="sample img">
+          </div>
+          <div class="c6box">
+            <p>C#</p>
+            <img src="img/csharp.png" alt="sample img">
+          </div>
+          <div class="c6box">
+            <p>Ruby</p>
+            <img src="img/ruby.png" alt="sample img">
+          </div>
+          <div class="c6box">
+            <p>PHP</p>
+            <img src="img/php.png" alt="sample img">
+          </div>
+          <div class="c6box">
+            <p>Scala</p>
+            <img src="img/scala.png" alt="sample img">
+          </div>
+          <div class="c6box">
+            <p>Clojure</p>
+            <img src="img/clojure.png" alt="sample img">
+          </div>
+        </div>
+      </div>
+      <footer>
+        <div class="fsection1">
+          <p><span>Mizuki</span><br><br>Copyright&copy;2020</p>
+        </div>
+        <div class="fsection2">
+          <a href="#">Home</a><br><br>
+          <a href="featurespage.html">Features</a><br><br>
+          <a href="docspage.html">Docs</a><br>
+        </div>
+        <div class="fsection3">
+          <i class="fab fa-2x fa-github"></i>
+          <i class="fab fa-2x fa-facebook"></i>
+          <i class="fab fa-2x fa-instagram"></i>
+          <i class="fab fa-2x fa-twitter"></i>
+        </div>
+      </footer>
+  </body>
+</html>

@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Docs</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/all.css" rel="stylesheet">
+    <link href="webfonts" rel="stylesheet">
+    <style>
+      body{
+        margin:0;
+      }
+      .container1{
+        display:flex;
+        justify-content:space-around;
+        background-color:#000000;
+      }
+      @media(max-width:786px){
+        .container1{
+          flex-direction:column;
+        }
+        .container1 ul{
+          justify-content:center;
+          background-color:#3c3c3c;
+        }
+      }
+      .container1 p{
+        padding:20px;
+        margin:0;
+        font:500 25px arial;
+        color:white;
+        text-align:center;
+      }
+      .container1 ul{
+        display:flex;
+        list-style-type:none;
+        margin:0;
+        padding:0;
+        font:500 18px arial;
+      }
+      .container1 ul li a{
+        text-decoration:none;
+        color:white;
+      }
+      .container1 ul li{
+        padding:20px;
+      }
+      .container1 ul li:hover{
+        background-color:#787878;
+      }
+      .container2{
+        background-color: seagreen;
+        color:white;
+        padding:20px;
+      }
+      #c2para1{
+        padding:20px 40px 20px 0px;
+        flex:2;
+        margin-right:30px;
+      }
+      #c2para1 h1{
+        font:500 35px arial;
+        margin:0px 0px 20px 0px;
+      }
+      #c2para1 p{
+        font:500 20px arial;
+      }
+      #c2img{
+        flex:1;
+        margin-left:30px;
+      }
+      #random1{
+        flex:1;
+      }
+      @media(min-width:786px){
+        .container2{
+          display:flex;
+          justify-content:space-between;
+        }
+      }
+      @media(max-width:786px){
+        #c2para1{
+          text-align:center;
+          padding:20px;
+          margin:auto;
+        }
+        #c2img{
+          text-align: center;
+        }
+      }
+      .c3essentials h2{
+        font:500 20px arial;
+      }
+      .c3essentials ul{
+        margin:0;
+        list-style-type:none;
+        padding:0;
+      }
+      .c3essentials ul li{
+        padding:5px 0px;
+        border-bottom:1px rgb(180,180,180) solid;
+      }
+      .c3essentials ul li a{
+        font:100 16px arial;
+        text-decoration:none;
+        color:black;
+      }
+      .c3essentials ul li span{
+        color:seagreen;
+      }
+      .c3essentials ul li a:hover{
+        font-size:17px;
+        font-weight:500;
+      }
+      .c3essentials{
+        background-color:rgb(240,240,240);
+        padding:30px 20px;
+        border-radius:10px;
+        box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2),0 3px 4px 0 rgba(0, 0, 0, 0.19);
+      }
+      .c3introstuff h2{
+        font:100 25px arial;
+      }
+      .c3introstuff h3{
+        font:100 20px arial;
+        margin-top:30px;
+        margin-bottom:5px;
+      }
+      .c3introstuff p{
+        font:100 15px arial;
+      }
+      #greenone{
+        padding:10px;
+        background-color:green;
+        color:white;
+      }
+      #blackone{
+        font:100 15px monospace;
+        padding:10px;
+        background-color:black;
+        color:white;
+        margin:0px;
+      }
+      .installpart p{
+        margin-bottom:3px;
+      }
+      .intropart button{
+        font:100 15px arial;
+        border:none;
+        padding:10px;
+        background-color:lightgrey;
+      }
+      .c3introstuff{
+        border-radius:10px;
+        padding:30px 20px;
+        box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2),0 3px 4px 0 rgba(0, 0, 0, 0.19);
+      }
+      .container3{
+        display:flex;
+        justify-content: space-between;
+        align-items:flex-start;
+        margin:40px 0px;
+      }
+      .c3random{
+        flex:1;
+      }
+      .c3essentials{
+        flex:1;
+        margin-right:20px;
+      }
+      .c3introstuff{
+        margin-left:20px;
+        flex-basis:40%;
+      }
+      @media(max-width:786px){
+        .container3{
+          flex-direction:column;
+        }
+        .c3essentials{
+          margin:auto;
+          width:60%;
+          text-align: center;
+          margin-bottom: 35px;
+        }
+        .c3introstuff{
+          margin: auto;
+          width:80%;
+        }
+      }
+      footer{
+        display:flex;
+        background-color:darkslategrey;
+        justify-content: space-around;
+      }
+      @media(max-width:786px){
+        footer{
+          flex-direction:column;
+        }
+      }
+      .fsection1{
+        padding:30px;
+        text-align: center;
+      }
+      .fsection1 p{
+        margin:0;
+        font:500 15px arial;
+        color:white;
+      }
+      .fsection1 p span{
+        font:400 25px arial;
+      }
+      .fsection2{
+        font:500 17px arial;
+        padding:30px;
+        text-align: center;
+      }
+      .fsection3{
+        color:white;
+        padding:30px;
+        text-align: center;
+      }
+      .fsection2 a{
+        text-decoration:none;
+        color:white;
+        font:500 17px arial; 
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container1">
+      <p>Mizuki.</p>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="featurespage.html">Features</a></li>
+        <li><a href="#">Docs</a></li>
+      </ul>
+    </div>
+    <div class="container2">
+      <div id="random1"></div>
+      <div id="c2para1">
+        <h1>Docs</h1>
+        <p>Learn how to work with the Mizuki platform</p>
+      </div>
+      <div id="c2img">
+        <img src="img/docs.png" alt="Sample img." width="250px" height="250px">
+      </div>
+      <div id="random1"></div>
+    </div>
+    <div class="container3">
+      <div class="c3random"></div>
+      <div class="c3essentials">
+        <h2>Essentials</h2>
+        <ul>
+          <li><a href="#"><span>Introduction</span></a></li>
+          <li><a href="#">About Mizuki</a></li>
+          <li><a href="#">Installation</a></li>
+        </ul>
+        <br>
+        <h2>Deployment</h2>
+        <ul>
+          <li><a href="#">Setting up a container</a></li>
+          <li><a href="#">Using the CLI</a></li>
+          <li><a href="#">Managing resources</a></li>
+          <li><a href="#">Upgrade & downgrade</a></li>
+        </ul>
+      </div>
+      <div class="c3introstuff">
+        <div class="intropart">
+          <h2>Introduction</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Excepturi quidem doloribus, architecto laboriosam, esse,
+            totam a neque officiis molestiae asperiores deserunt harum perspiciatis dolor voluptatibus.
+            Sint, labore voluptatem atque explicabo.</p>
+          <p id="greenone"><i class="fas fa-info"></i>&nbsp;&nbsp;&nbsp;Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, animi?</p>
+          <h3>Lorem, ipsum dolor.</h3>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima totam magni eius vitae velit id, atque veritatis! At, vero porro.</p>
+          <button>Install CLI</button>
+          <h3>Requirements</h3>
+          <p>Windows 10, Mac OSX, Linux<br>Node.js v12 or higher</p>
+        </div>
+        <div class="installpart">
+          <h3>Install</h3>
+          <p>Mac (Homebrew)</p>
+          <p id="blackone">$ brew install mizuki-cli</p>
+          <p>NPM</p>
+          <p id="blackone">$ npm install mizuki-cli</p>
+          <p>Yarn</p>
+          <p id="blackone">$ yarn install mizuki-cli</p>
+        </div>
+      </div>
+      <div class="c3random"></div>
+    </div>
+    <footer>
+      <div class="fsection1">
+        <p><span>Mizuki</span><br><br>Copyright&copy;2020</p>
+      </div>
+      <div class="fsection2">
+        <a href="index.html">Home</a><br><br>
+        <a href="featurespage.html">Features</a><br><br>
+        <a href="#">Docs</a><br>
+      </div>
+      <div class="fsection3">
+        <i class="fab fa-2x fa-github"></i>
+        <i class="fab fa-2x fa-facebook"></i>
+        <i class="fab fa-2x fa-instagram"></i>
+        <i class="fab fa-2x fa-twitter"></i>
+      </div>
+    </footer>
+  </body>
+</html>
